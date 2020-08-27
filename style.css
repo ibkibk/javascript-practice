@@ -1,56 +1,42 @@
+/* tech test 1 */
+/* 
 body {
   text-align: center;
-  margin-top: 200px;
+  margin-top: 350px;
 }
 
-/* a {
-  border: 2px solid rgb(56, 53, 53);
-  color: rgb(90, 87, 87);
-  text-decoration: none;
-  text-transform: uppercase;
-  border-radius: 15px;
-  font-size: 30px;
-  padding: 10px;
-} */
-/* a {
-  border: 2px solid rgb(56, 53, 53);
-  color: rgb(90, 87, 87);
-  text-decoration: none;
-  text-transform: uppercase;
-  border-radius: 15px;
-  font-size: 30px;
-  padding: 10px;
-} */
-/* 
 a {
   position: relative;
-  display: inline-block;
+  font-weight: bold;
+  border: 4px solid rgb(56, 53, 53);
+  border-radius: 30px;
+  color: black;
+  padding: 30px 100px;
+  font-size: 30px;
   text-decoration: none;
   text-transform: uppercase;
-
-   margin-left: 0.9em;
-  margin-right: 0.9em;
-  margin-bottom: 1.2em; 
-  border-right: 0.3em solid transparent;
-  border-bottom: 0.7em solid #fc0;
-  border-left: 0.3em solid transparent;
-  font-size: 30px;
+  background-color: rgb(226, 222, 222);
 }
-a:before,
-a:after {
-  content: "";
-  display: block;
+
+a::before {
+  content: "★";
+  padding-right: 235px;
+  padding-top: 8px;
+  border-radius: 15px;
   position: absolute;
-  top: 0.6em;
-  left: -1em;
-  border-right: 1em solid transparent;
-  border-bottom: 0.7em solid #fc0;
-  border-left: 1em solid transparent;
-  transform: rotate(-35deg);
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  border: 2px solid black;
 }
 
-a:after {
-  transform: rotate(35deg);
+a::after {
+  content: "★";
+  padding-left: 15px;
+  padding-bottom: 40px;
+  margin-top: -6px;
+  position: absolute;
 } */
 
 /* ===================================================================================== */
@@ -87,7 +73,7 @@ btnPlus.addEventListener("click", (e) => {
 /* ===================================================================================== */
 
 /* tech test 3  */
-.box {
+/* .box {
   margin: 40px auto;
   background: #005eff;
   width: 150px;
@@ -100,4 +86,4 @@ btnPlus.addEventListener("click", (e) => {
   background: green;
   border-radius: 50%;
   transform: rotate(180deg);
-}
+} */
