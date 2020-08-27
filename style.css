@@ -1,0 +1,103 @@
+body {
+  text-align: center;
+  margin-top: 200px;
+}
+
+/* a {
+  border: 2px solid rgb(56, 53, 53);
+  color: rgb(90, 87, 87);
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 15px;
+  font-size: 30px;
+  padding: 10px;
+} */
+/* a {
+  border: 2px solid rgb(56, 53, 53);
+  color: rgb(90, 87, 87);
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 15px;
+  font-size: 30px;
+  padding: 10px;
+} */
+/* 
+a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+
+   margin-left: 0.9em;
+  margin-right: 0.9em;
+  margin-bottom: 1.2em; 
+  border-right: 0.3em solid transparent;
+  border-bottom: 0.7em solid #fc0;
+  border-left: 0.3em solid transparent;
+  font-size: 30px;
+}
+a:before,
+a:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0.6em;
+  left: -1em;
+  border-right: 1em solid transparent;
+  border-bottom: 0.7em solid #fc0;
+  border-left: 1em solid transparent;
+  transform: rotate(-35deg);
+}
+
+a:after {
+  transform: rotate(35deg);
+} */
+
+/* ===================================================================================== */
+
+/* tech test 2
+/
+JavaScript first searches to see if a variable exists locally, 
+then searches progressively in higher
+ levels of scope until global variables. Saving variables in a 
+ local scope allows JavaScript to access them much faster.
+/
+let btnMinus = document.querySelector("#minus");
+let btnPlus = document.querySelector("#plus");
+let number = document.querySelector("#number");
+
+btnMinus.addEventListener("click", (e) => {
+  e.stopPropagation();
+  if (number.innerText == 1) {
+    number.innerText = Number(number.innerText) - 2;
+  } else {
+    number.innerText = Number(number.innerText) - 1;
+  }
+});
+
+btnPlus.addEventListener("click", (e) => {
+  e.stopPropagation();
+  if (number.innerText == -1) {
+    number.innerText = Number(number.innerText) + 2;
+  } else {
+    number.innerText = Number(number.innerText) + 1;
+  }
+}); */
+
+/* ===================================================================================== */
+
+/* tech test 3  */
+.box {
+  margin: 40px auto;
+  background: #005eff;
+  width: 150px;
+  height: 150px;
+  transition: all 0.8s linear;
+  cursor: pointer;
+}
+
+.box:hover {
+  background: green;
+  border-radius: 50%;
+  transform: rotate(180deg);
+}
