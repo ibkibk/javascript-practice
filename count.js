@@ -19,13 +19,13 @@ document.querySelectorAll("#plus")[0].addEventListener("click", function (e) {
     Number(document.querySelectorAll("#number")[0].innerText) + 1;
 });
 
-// JavaScript first searches to see if a variable exists locally,
-// then searches progressively in higher
-//  levels of scope until global variables. Saving variables in a
-//  local scope allows JavaScript to access them much faster.
-let btnMinus = document.querySelector("#minus");
-let btnPlus = document.querySelector("#plus");
-let number = document.querySelector("#number");
+// To solve the performance issues I used getElementById instead of querySelectorAll because
+// This method finds all the elements that match the specified CSS selector in the document and
+// returns the one we are looking for. Whereas The getElementById is a  method returns the element
+// with the ID attribute we specified.
+let btnMinus = document.getElementById("minus");
+let btnPlus = document.getElementById("plus");
+let number = document.getElementById("number");
 
 btnMinus.addEventListener("click", (e) => {
   e.stopPropagation();
